@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Hello Arduino!</title>
+</head>
+<style>
+    div{
+        background-color: antiquewhite;
+        
+    }
+</style>
+<body>
+    <div>
+        <form method="post">
+        {% csrf_token %}
+            <label for="text">Text</label>
+            <br>
+            <input type="text" id="text" name="datafield">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
